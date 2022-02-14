@@ -9,7 +9,7 @@ document.getElementById("login-form").addEventListener("submit", function(e){
     const email = document.getElementById("email-imput").value;
     const password = document.getElementById("password-imput").value;
     const session = document.getElementById("session-check").checked;
-
+    console.log(session)
     const account = getAccount(email);
 
     if(!account){

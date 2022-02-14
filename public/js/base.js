@@ -6,8 +6,8 @@ let data = {
     transaction: []
 };
 
-document.getElementById("Button-logout").addEventListener("click", logout);
-document.getElementById("transaction-button").addEventListener("click", function () {
+document.getElementById("button-logout").addEventListener("click", logout);
+document.getElementById("transactions-button").addEventListener("click", function () {
     window.location.href = "transactions.html"
 });
 

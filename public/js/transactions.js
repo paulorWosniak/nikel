@@ -5,9 +5,9 @@ const session = localStorage.getItem("session");
 let data = {
     transaction: []
 };
-document.getElementById("Button-logout").addEventListener("click", logout);
+document.getElementById("button-logout").addEventListener("click", logout);
 
-document.getElementById("transaction-form").addEventListener("submit", function (e) {
+document.getElementById("trasacion-form").addEventListener("submit", function (e) {
     e.preventDefault();
     const value = parseFloat(document.getElementById("value-imput").value);
     const descripsion = document.getElementById("description-imput").value;
@@ -72,7 +72,7 @@ function getTransaction() {
             `
         })
     }
-    document.getElementById("transactions-list").innerHTML = transactionHtml;
+    document.getElementById("transaction-list").innerHTML = transactionHtml;
 
 }
 function saveData(data) {
